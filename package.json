@@ -1,6 +1,6 @@
 {
   "name": "@willianpaiva/copilot-mcp-server",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "MCP server that integrates with GitHub Cbuildopilot to provide code assistance",
   "main": "dist/index.js",
   "type": "module",
