@@ -10,7 +10,7 @@ A Model Context Protocol (MCP) server that integrates with GitHub Copilot to pro
 - **Code Review**: Get feedback and improvement suggestions for your code
 - **Multiple AI Models**: Support for GPT-4o, Claude 3.5 Sonnet, and Gemini 2.0 Flash
 - **Rate Limiting**: Built-in rate limiting to respect API limits
-- **Flexible Authentication**: Support for both Personal Access Tokens and GitHub Apps
+- **Automatic Authentication**: Works with your existing GitHub Copilot CLI setup
 
 ## Installation
 
@@ -91,9 +91,10 @@ No manual configuration needed if you have GitHub Copilot CLI installed and auth
 
 **Troubleshooting Authentication**
 
-If automatic detection fails, you can manually override:
-```env
-GITHUB_TOKEN=your_github_token_here
+If automatic detection fails, ensure you have GitHub Copilot CLI properly installed and authenticated:
+```bash
+gh extension install github/gh-copilot
+gh auth login
 ```
 
 ## Usage
