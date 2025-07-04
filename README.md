@@ -17,7 +17,7 @@ A Model Context Protocol (MCP) server that integrates with GitHub Copilot to pro
 ### Option 1: Using npx (Recommended)
 
 ```bash
-npx copilot-mcp-server
+npx @willianpaiva/copilot-mcp-server
 ```
 
 ### Option 2: Manual Installation
@@ -109,7 +109,7 @@ Add the following to your Claude Code MCP configuration:
   "mcpServers": {
     "copilot": {
       "command": "npx",
-      "args": ["-y", "copilot-mcp-server"]
+      "args": ["-y", "@willianpaiva/copilot-mcp-server"]
     }
   }
 }
